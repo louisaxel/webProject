@@ -13,11 +13,71 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <style>
+      body{
+        background-color:dimgray;
+      }
+
+      .button1 {
+  background-color: #4CAF50; 
+  color: white; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+
+.button2 {
+  background-color: none;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.button2:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button3 {
+  background-color: blue;
+  color: white;
+  font-size: 25px;
+  border: 2px solid blue;
+}
+
+.button3:hover {
+  background-color: white;
+  font-size: 25px;
+  color: blue;
+  border: 2px solid blue;
+}
+
+.button4 {
+  background-color: none;
+  color: gray;
+  font-size: 25px;
+  border: 2px solid gray;
+}
+
+.button4:hover {
+  background-color: gray;
+  font-size: 25px;
+  color: darkblue;
+}
+
+.btn1 {
+  transition-duration: 0.4s;
+}
+
+    </style>
+
   </head>
   <body>
 
     <nav
-    class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary"
+    class="navbar border-bottom border-body navbar-expand-lg bg-body-tertiary"
     data-bs-theme="dark"
     aria-label="Thirteenth navbar example"
   >
@@ -30,8 +90,8 @@
             role="button"
             src="cat1.gif"
             alt=""
-            width="50"
-            height="50"
+            width="45"
+            height="45"
           />
           </li>
         <li class="nav-item">
@@ -54,33 +114,21 @@
           placeholder="Search"
           aria-label="Search"
         />
-        <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-      <li class="nav-item dropdown">
-        <img src="pp.jpg"
-        role="button"
-        data-bs-toggle="dropdown"
-        width="30"
-        height="30">
 
-        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><a class="dropdown-item" href="#">User Management</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Log out</a></li>
-        </ul>
-      </li>
+      <button class="btn btn1 button1 mx-2" type="button" onclick="location.href='login.html'">Sign in</button>
+      <button class="btn btn1 button2" type="button" onclick="location.href='signup.html'">Sign up</button>
       
     </div>
   </nav>
 
-  <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
+  <div class="px-4 pt-5 my-5 text-center rounded-3" style="background-color: aliceblue;">
+    <h1 class="display-4 fw-bold text-body-emphasis">Desa ABC</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <p class="lead mb-4">Desa ABC yang memiliki suasana alam yang masih alami tanpa sentuhan tangan liar. Memiliki warga-warga yang ramah dan suka membantu satu sama lain. Pepohonan yang rindang dan asri serta sungai yang jernih</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        <button type="button" class="btn btn1 button3" onclick="location.href='err.html'">Nomor Kontak Desa</button>
+        <button type="button" class="btn btn1 button4" onclick="location.href='err.html'">Kontak Kepala Desa</button>
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 80vh;">
@@ -90,68 +138,29 @@
     </div>
   </div>
 
-  <hr class="featurette-divider" />
+  <!-- <hr class="featurette-divider" /> -->
 
-  <footer class="container py-5">
+  <footer class="container-fluid py-3 bg-dark">
     <div class="row">
-      <div class="col-12 col-md">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          class="d-block mb-2"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <title>Product</title>
-          <circle cx="12" cy="12" r="10" />
-          <path
-            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
-          />
-        </svg>
-        <small class="d-block mb-3 text-body-secondary">Website Desa</small>
+      <div class="col-12 col-md" style="color: antiquewhite;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        
       </div>
       <div class="col-6 col-md">
-        <h5>Kelebihan</h5>
-        <ul class="list-unstyled text-small">
-          <li>
-            <a class="link-secondary text-decoration-none" href="#">Kompak</a>
-          </li>
-          <li>
-            <a class="link-secondary text-decoration-none" href="#"
-              >Gotong Royong</a
-            >
-          </li>
-          <li>
-            <a class="link-secondary text-decoration-none" href="#"
-              >Persatuan</a
-            >
-          </li>
-          <li>
-            <a class="link-secondary text-decoration-none" href="#">Cerdas</a>
-          </li>
-          <li>
-            <a class="link-secondary text-decoration-none" href="#"
-              >Sopan Santun</a
-            >
-          </li>
-          <li>
-            <a class="link-secondary text-decoration-none" href="#">Modern</a>
-          </li>
+        <h5 style="color: whitesmoke" text-decoration-none" href="err.html">Gotong Royong</a></li>
+          <li><a class="link-secondary text-decoration-none";" href="err.html">Persatuan</a></li>
+          <li><a class="link-secondary text-decoration-none" href="err.html">Cerdas</a></li>
+          <li><a class="link-secondary text-decoration-none" href="err.html">Sopan Santun</a></li>
+          <li><a class="link-secondary text-decoration-none" href="err.html">Modern</a></li>
         </ul>
       </div>
     </div>
     <!-- <p class="float-end"><a href="#">Back to top</a></p> -->
-    <p>
+    <p style="color: antiquewhite;">
       &copy; 2017–2023 Company, Inc.
       <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
-      <a class="float-end" href="#"> <img src="back_to_top.png" /> </a>
+      <a class="float-end" href="#"> <img class="rounded-3" src="back_to_top.png" style="background-color: aliceblue" > </a>
     </p>
-  </footer>
+</footer>
   </body>
 </html>
