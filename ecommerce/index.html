@@ -121,7 +121,12 @@
       }
 
       .desc {
-        background-color: #f4bddb;
+        background-image: url("asset/manfaat_bg.jpg");
+      }
+
+      .manfaat-bg2 {
+        background-color: #ef72a6;
+        opacity: 15;
       }
 
       .img-testi {
@@ -160,6 +165,11 @@
       .testi-body-font {
         font-family: "Poppins", sans-serif;
         color: white;
+      }
+
+      .bg-blue {
+        background-image: url("asset/bgbiru.jpg");
+        display: cover;
       }
 
       .item-title {
@@ -437,34 +447,49 @@
       </div>
     </div>
 
-    <div class="container-fluid desc">
+    <div class="container-fluid desc bg-image img-responsive">
       <div class="row">
         <!-- <div class="col-lg-6 text-center my-auto">
           <img class="heroes2" src="logo.png" />
         </div> -->
-
-        <div class="col-lg-6 my-auto mx-auto">
-          <div class="p-5 justify-content-between" style="text-align: center">
-            <h1 class="display-4 manfaat-font">Manfaat</h1>
-            <!-- <p
+        <div
+          class="p-5 text-center bg-image img-responsive"
+          style="
+            background-image: url('asset/manfaat_bg.jpg');
+            background-repeat: no-repeat;
+            height: 400 px;
+          "
+        >
+          <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.6)">
+            <div class="col-lg-6 my-auto mx-auto">
+              <div
+                class="p-5 justify-content-between"
+                style="text-align: center"
+              >
+                <h1 class="display-4 manfaat-font">Manfaat</h1>
+                <!-- <p
               class="lead desc-font"
               style="text-align: center; font-size: 20px"
             > -->
-            <ul
-              class="desc-font text-center"
-              style="
-                list-style-type: none;
-                text-decoration: none;
-                padding: 0px 0px;
-              "
-            >
-              <li class="text-center">Alternatif minuman segar dan sehat</li>
-              <li class="text-center">Mengandung buah yang kaya serat</li>
-              <li class="text-center">Tanpa campuran gula buatan</li>
-              <li class="text-center">Tanpa adanya bahan pengawet</li>
-            </ul>
-            <!-- </p> -->
-            <!-- <a href="err.html" class="btn btn-cust">Lebih lanjut..</a> -->
+                <ul
+                  class="desc-font text-center"
+                  style="
+                    list-style-type: none;
+                    text-decoration: none;
+                    padding: 0px 0px;
+                  "
+                >
+                  <li class="text-center">
+                    Alternatif minuman segar dan sehat
+                  </li>
+                  <li class="text-center">Mengandung buah yang kaya serat</li>
+                  <li class="text-center">Tanpa campuran gula buatan</li>
+                  <li class="text-center">Tanpa adanya bahan pengawet</li>
+                </ul>
+                <!-- </p> -->
+                <!-- <a href="err.html" class="btn btn-cust">Lebih lanjut..</a> -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -790,22 +815,24 @@
       </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 p-5 justify-content-center testi">
+    <div
+      class="d-md-flex flex-md-equal w-100 p-5 justify-content-center testi bg-blue"
+    >
       <div
         class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden rounded my-3"
       >
         <div class="my-3">
-          <h2 class="display-5 testi-title-font" style="color: black">
+          <h2 class="display-5 testi-title-font" style="color: #ef72a6">
             Testimoni
           </h2>
           <p class="lead testi-body-font" style="color: black">
-            Bagaimana pendapat mereka ?
+            What they said?
           </p>
         </div>
         <!-- <div
-          class="bg-dark shadow-sm mx-auto"
-          style="width: 80%; height: 350px; border-radius: 21px 21px 0 0"
-        > -->
+            class="bg-dark shadow-sm mx-auto"
+            style="width: 80%; height: 350px; border-radius: 21px 21px 0 0"
+          > -->
         <img class="img-testi" src="asset/testi1.jpeg" alt="" />
         <!-- </div> -->
       </div>
@@ -813,15 +840,17 @@
         class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden rounded my-3"
       >
         <div class="my-3">
-          <h2 class="display-5 testi-title-font" style="color: black">
+          <h2 class="display-5 testi-title-font" style="color: #ef72a6">
             Testimoni
           </h2>
-          <p class="lead testi-body-font" style="color: black">Varian</p>
+          <p class="lead testi-body-font" style="color: black">
+            What they said?
+          </p>
         </div>
         <!-- <div
-          class="bg-dark shadow-sm mx-auto"
-          style="width: 80%; height: 350px; border-radius: 21px 21px 0 0"
-        > -->
+            class="bg-dark shadow-sm mx-auto"
+            style="width: 80%; height: 350px; border-radius: 21px 21px 0 0"
+          > -->
         <img class="img-testi" src="asset/testi2.jpeg" alt="" />
         <!-- </div> -->
       </div>
